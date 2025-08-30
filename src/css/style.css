@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "LucidaGrande";
-  src: url("css/lucidagrande.woff2") format("woff2");
-  font-weight: normal;
+    font-family: "LucidaGrande";
+    src: url("lucidagrande.woff2") format("woff2");
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: "LucidaGrande";
-  src: url("css/lucidagrandebold.woff2") format("woff2");
-  font-weight: bold;
+    font-family: "LucidaGrande";
+    src: url("lucidagrandebold.woff2") format("woff2");
+    font-weight: bold;
 }
 
 * {
