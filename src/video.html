@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крафтфликс - кинотеатр SunnyWorld</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html">Назад, в меню</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="recommend">
+                <video id="videoPlayer" controls="controls" controlsList="nodownload"></video> 
+            </section>
+            <!-- <h2>Сезон 1</h2>
+            <section class="catalog">
+                <a href="./doctor_adventures1.html">
+                    <img src="../img/series/01.png" alt="Постер">
+                </a>
+                <a href="./doctor_adventures2.html">
+                    <img src="../img/series/02.png" alt="Постер">
+                </a>
+            </section> -->
+        </div>
+    </main>
+    <script>
+    // Получаем параметр ?v=
+      const urlParams = new URLSearchParams(window.location.search);
+      const videoName = urlParams.get('v');
+
+      const videoElement = document.getElementById('videoPlayer');
+
+      if (videoName) {
+        // Присваиваем путь к видеофайлу
+        videoElement.src = 'videofiles/' + videoName + '.mp4';
+      } else {
+        videoElement.outerHTML = '<p>Параметр ?v= не указан.</p>';
+      }
+    </script>
+</body>
+</html>
